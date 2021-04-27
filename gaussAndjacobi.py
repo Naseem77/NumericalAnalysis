@@ -11,7 +11,7 @@ def isDm(arr,n):
     return True
     
 def jacobi(arr,e):
-"""Jacobi function which accept the array and the e=0.0001, then returns x,y,z and prints x,y,z"""
+    """Jacobi function which accept the array and the e=0.0001, then returns x,y,z and prints x,y,z"""
     if(isDm(arr,3)):
         func1 = lambda x, y, z: (arr[0][3] - arr[0][1] * y - arr[0][2]) / arr[0][0]
         func2 = lambda x, y, z: (arr[1][3] - arr[1][0] * x - arr[1][2] * z) / arr[1][1]
@@ -39,7 +39,7 @@ def jacobi(arr,e):
     else:
         print('Its not Diagonally Dominant Matrix ')
 def gaussSeidel(arr,e):
-"""gauss function which accept the array and the e=0.0001, then returns x,y,z cheks if the len of the array by isDm function, plus returns error message if len is uncorret"""
+    """gauss function which accept the array and the e=0.0001, then returns x,y,z cheks if the len of the array by isDm function, plus returns error message if len is uncorret"""
     if (isDm(arr, 3)):
         func1 = lambda x, y, z: (arr[0][3] - arr[0][1] * y - arr[0][2]) / arr[0][0]
         func2 = lambda x, y, z: (arr[1][3] - arr[1][0] * x - arr[1][2] * z) / arr[1][1]
